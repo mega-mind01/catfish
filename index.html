@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catfish Project</title>
+</head>
+<body>
+    <P>CATFISH PROJECT</P>
+
+    <script>
+        let counter = 1;
+        let div_by_3 = 0;
+        let div_by_5 = 0;
+        let div_by_both = 0;
+
+        while (counter <= 50) {
+            if ((counter % 3 == 0) && (counter % 5 == 0)) {
+                document.write(`${counter} = Catfish <br>`);
+                div_by_3++;
+                div_by_5++;
+                div_by_both++;
+            } else {
+                if (counter % 3 == 0) {
+                    document.write(`${counter} = cat <br>`);
+                    div_by_3++;
+                } else if (counter % 5 == 0) {
+                    document.write(`${counter} = Fish <br>`);
+                    div_by_5++;
+                } else {
+                    document.write(`${counter} <br>`);
+                }
+            }
+            counter++;
+        }
+
+        document.write(`The total number divisible by 3 is ${div_by_3} and the total number divisible by 5 is ${div_by_5} and the number divisible by both 5 and 3 is ${div_by_both}`)
+    </script>
+</body>
+</html>
